@@ -49,7 +49,7 @@ filename <- "/Users/vkumar/Box Sync/LAB/PSY todo/2024-01-31 JCMS Sens Analysis/D
 # read and maintian the MouseID as character
 # d1 <- fread(filename, sep = '\t', colClasses = c("MouseID" = "character"))
 
-d1 <- as.data.table(read_xlsx(filename, sheet = "TOM_PSYQuery2" )) #made this correction to convert to data.table.
+d1 <- as.data.table(read_xlsx(filename, sheet = 1)) # Read the first worksheet and convert it to a data.table.
 
 ################# CREATE A FOLDER FOR OUTPUT FILES 
 #  Create an empty folder in directory that is one level higher than the input file
